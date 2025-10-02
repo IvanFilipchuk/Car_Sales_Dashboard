@@ -1,4 +1,7 @@
 # Car Sales Dashboard – Power BI Analytics  
+<p align="center">  
+  <img src="screenshots/page2_cars_analysis.png" alt="Cars Analysis" width="800"/>  
+</p>  
 
 ## Introduction  
 The **Car Sales Dashboard** is an interactive **Power BI report** built on top of the **DWH Car Sales Data Mart**.  
@@ -138,3 +141,15 @@ The data model follows a **star schema**:
 **Dynamic Titles (example):**  
 ```DAX
 Title - Average Sale = "Average Sale for " & SELECTEDVALUE(DIM_CARS[BRAND], "All Brands") & " in " & SELECTEDVALUE(DIM_DATES[YearInSales], "All Years")
+```
+---
+
+## Summary  
+
+The **Car Sales Dashboard** enables a complete view of dealership sales performance, powered by the custom-built **Car Sales Data Warehouse**.  
+It supports strategic decision-making through advanced visualizations and real-time KPIs.  
+
+For the ETL pipeline and Data Warehouse implementation, check the repository here:  
+[Car Sales DWH – PostgreSQL ETL Project](https://github.com/IvanFilipchuk/DWH_Car_Sales)  
+
+---
